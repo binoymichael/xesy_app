@@ -1,0 +1,115 @@
+.container {
+  width: 800px;
+}
+
+body {
+  background: #fff;
+}
+
+header {
+  padding-top: 20px;
+  padding-left: 120px;
+  border-bottom: dotted thin;
+  border-bottom-color: black;
+  background: #ddd;
+}
+
+header img {
+  padding: 1em;
+  background: #fff;
+}
+
+div.field, div.actions {
+  margin-bottom: 10px;
+  padding-left: 50px;
+}
+
+#tasks_incoming {
+  margin: 20px;
+  float: left;
+  width: 300px;
+}
+
+#tasks_active {
+  margin: 20px;
+  float: left;
+  width: 300px;
+}
+
+#tasks_container {
+  width: 700px;
+}
+
+#footer {
+  clear:both;
+}
+.task_timestamp, .task_delete_link {
+  font-size: 80%;
+}
+
+/*
+.tasks_table tbody tr:nth-child(4n) td, .tasks_table tbody tr:nth-child(4n-1) td  {
+  background:#e5ecf9;
+}
+*/
+
+.tasks_table {
+  border-collapse:collapse;
+}
+
+
+.task_title {
+  background:#ccc;
+  border-top: 7px solid white;
+}
+
+.task_detail {
+  background:#eee;
+}
+
+.red {
+  background:#ccc;
+}
+/* error fields styling
+
+.field_with_errors {
+  margin-top: 10px;
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+.field_with_errors label {
+  color: #fff;
+}
+
+#error_explanation {
+  width: 400px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  background-color: #c00;
+  color: #fff;
+}
+
+#error_explanation p {
+  color: #333;
+  margin-bottom: 0;
+  padding: 5px;
+}
+
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+*/

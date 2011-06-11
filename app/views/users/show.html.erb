@@ -1,0 +1,36 @@
+<table class="front" summary="For signed-in users">
+  <tr>
+    <td class="main">
+      <h1 class="task">What's up?</h1>
+      <%= render 'shared/task_form' %>
+    </td>
+  </tr>
+</table>
+
+<% content_for(:head) do %>
+<%= javascript_include_tag 'timer' %>
+<% end %>
+
+<div id="timer_container">
+  <%= button_to_function 'Start Timer', {:onClick => 'doTimer()'} %>
+  <%= button_to_function 'Reset Timer', {:onClick => 'timerReset()'} %>
+  
+  <span id="timer"></span>
+</div>  
+
+<div id="tasks_container">
+<% unless @user.tasks.empty? %>
+  <div id="tasks_incoming">
+    <table class="tasks_table" summary="User tasks">
+      <%= render 'tasks/task' %>
+    </table>
+  </div>
+
+  <div id="tasks_active">  
+    <table class="tasks_table" summary="User tasks">
+      <%= render 'tasks/daily_tasks' %>
+    </table>
+  </div>
+    
+<% end %>
+</div>
